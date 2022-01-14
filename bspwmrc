@@ -69,10 +69,12 @@ xsetroot -cursor_name left_ptr
 # Restore wallpaper
 bash $HOME/.fehbg
 
-# Start mpd
-exec mpd &
-
 # Start bspwm scripts
 picom &
 /usr/bin/nm-applet &
 bash $HOME/.config/polybar/launch.sh
+
+# ASUS Touchpad Config
+xinput set-prop 14 320 1
+xinput set-prop 14 342 1
+
